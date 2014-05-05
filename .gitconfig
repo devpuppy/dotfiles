@@ -1,13 +1,13 @@
 [user]
-	name = Justin Jones
-	email = XXX
+  name = Justin Jones
+  email = XXX
 [credential]
   helper = osxkeychain
 
 [alias]
   # abbrevs
-	st = status
-	co = checkout
+  st = status
+  co = checkout
   ci = commit
   b = branch
 
@@ -16,7 +16,7 @@
   m = checkout master
   rh = reset --hard HEAD
   unstage = reset --
-	
+  
   # log
   snake = log --pretty=format:'' --graph
   l  = log --pretty=format:'%C(yellow)%h%Creset - %C(green)%an%Creset %C(cyan)%d %C(reset)%s %Cgreen(%cr)%Creset' --graph
@@ -34,16 +34,16 @@
   commmit = commit
 
 [push]
-	default = current
+  default = current
 [branch]
   autosetupmerge = always
   autosetuprebase = always
 [core]
-	autocrlf = input
+  autocrlf = input
 
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
 
 [color]
   ui = true
