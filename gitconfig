@@ -1,0 +1,74 @@
+[user]
+	name = Justin Jones
+	email = XXX
+[credential]
+  helper = osxkeychain
+
+[alias]
+  # abbrevs
+	st = status
+	co = checkout
+  ci = commit
+  b = branch
+
+  # aliases
+  amend = commit —amend -C HEAD
+  m = checkout master
+  rh = reset --hard HEAD
+  unstage = reset --
+	
+  # log
+  snake = log --pretty=format:'' --graph
+  l  = log --pretty=format:'%C(yellow)%h%Creset - %C(green)%an%Creset %C(cyan)%d %C(reset)%s %Cgreen(%cr)%Creset' --graph
+  lg = log --pretty=format:'%C(yellow)%h%Creset - %C(green)%an%Creset %C(cyan)%d %C(reset)%s %Cgreen(%cr)%Creset' --stat
+
+  # last commit
+  sha = log -n 1 --format="%H"
+  ss = log -n 1 --format="%h" # Show short sha
+  pb = !git log -n 1 --format="%H" -z | pbcopy # Copy sha to pasteboard
+
+  # When I'm confused about changes that are staged
+  huh = diff HEAD
+
+  # typo handling
+  commmit = commit
+
+[push]
+	default = current
+[branch]
+  autosetupmerge = always
+  autosetuprebase = always
+[core]
+	autocrlf = input
+
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+
+[color]
+  ui = true
+  diff = true
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[diff]
+  color = auto
+[pager]
+  color = true
+[status]
+  color = auto
+
+# trying this out
+[gitflow]
+  base = master
+  release = release
