@@ -1,6 +1,6 @@
-[user]
-  name = Justin Jones
-  email = XXX
+[include]
+    path = .gitconfig.private
+
 [credential]
   helper = osxkeychain
 
