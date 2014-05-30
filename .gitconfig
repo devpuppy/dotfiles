@@ -16,6 +16,7 @@
   m = checkout master
   rh = reset --hard HEAD
   unstage = reset --
+  refresh = !git stash && git pull --rebase && git stash pop
   
   # log
   snake = log --pretty=format:'' --graph
