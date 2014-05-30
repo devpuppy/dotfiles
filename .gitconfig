@@ -12,7 +12,7 @@
   b = branch
 
   # aliases
-  amend = commit —amend -C HEAD
+  amend = commit --amend
   m = checkout master
   rh = reset --hard HEAD
   unstage = reset --
