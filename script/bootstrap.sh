@@ -5,7 +5,7 @@ brew install git
 brew install bash-completion
 brew install hub
 
-brew install rbenv ruby-build
+brew install rbenv ruby-build rbenv-binstubs
 
 ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 
