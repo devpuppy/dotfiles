@@ -1,9 +1,9 @@
 ### Setup
-#### clone
+##### clone
 `git clone https://github.com/devpuppy/dotfiles ~/dotfiles`
-#### symlink
+##### symlink
 `ln -s ~/.bash_profile ~/dotfiles/.bash_profile` and other dotfiles
-#### protect
+##### protect
 `cp ~/dotfiles/.gitconfig.private.example ~/dotfiles/.gitconfig.private` and customize
-#### bootstrap
+##### bootstrap
 `~/dotfiles/script/bootstrap.sh`
