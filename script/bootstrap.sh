@@ -1,9 +1,8 @@
 
 # install homebrew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew install git
-brew install bash-completion
-brew install hub
+brew install bash-completion git hub
 
 brew install rbenv ruby-build rbenv-binstubs
 
