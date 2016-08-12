@@ -39,7 +39,7 @@ alias be="bundle exec"
 alias rc="rails console"
 alias console="bundle exec rails console"
 rt() {
-  bin/rake test TEST=$1 TESTOPTS="--name=\"/.*$2.*/\""
+  bin/rake test TEST=$1 TESTOPTS="--name=\"/$2/\""
 }
 alias rr="touch tmp/restart.txt && echo 'app restarted'"
 alias rrg="rake routes | grep $@"
