@@ -2,7 +2,7 @@
     path = .gitconfig.private
 
 [credential]
-  helper = osxkeychain
+	helper = osxkeychain
 
 [alias]
   # abbrevs
