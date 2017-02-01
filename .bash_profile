@@ -32,6 +32,7 @@ alias difflist="git diff --name-only `git merge-base origin/master HEAD`"
 alias diffedit="(echo '.' && difflist) | xargs subl"
 
 alias la="ls -lahFG"
+alias psg="ps aux | grep $@"
 
 
 ### RAILS
@@ -48,6 +49,3 @@ alias glg="gem list | grep $@"
 alias jslint="bundle exec rake test:javascript_lint"
 alias resque="QUEUE=* bundle exec rake resque:work"
 alias redis="redis-server /usr/local/etc/redis.conf"
-
-export PATH=" + /usr/local/share/npm/bin + :$PATH"
-export PATH=/usr/local/share/npm/bin:$PATH
